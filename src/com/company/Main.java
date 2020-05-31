@@ -1,3 +1,12 @@
+/*
+ * First Lab About myself
+ *
+ * Version info 1
+ *
+ * Copyright Vitalii Danyshchuk
+
+ */
+
 package com.company;
 
 public class Main {
@@ -24,14 +33,6 @@ public class Main {
         System.out.println(about);
         System.out.println("String length is: " + about.length());
 
-        // System.out.println("My age is: " + age);
-        //System.out.println("My height is: " + height + " cm");
-        //System.out.println("My Current salary is: " + currentSalary + " grivnas");
-        //System.out.println("I lived for: " + minutesLived + " minutes");
-        //System.out.println("My weight is: " + weight + " kg");
-        //System.out.println("I passed: " + metersPassed + " meters");
-        //System.out.println("I`m married?: " + isMarried );
-        //System.out.println("My signature: " + signature);
         }
     }
 

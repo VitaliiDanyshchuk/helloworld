@@ -1,3 +1,12 @@
+/*
+ * is Palindrom?.
+ *
+ * Version info 1
+ *
+ * Copyright Vitalii Danyshchuk
+
+ */
+
 package com.company;
 import java.util.*;
 
@@ -26,7 +35,8 @@ public class Palindrom {
 
         if(isPalindrom.equals(opositeWord)){
             System.out.println("Given String is palindrome");
-        }else{
+        }
+        else {
             System.out.println("Given String is not palindrome");
         }
     }
