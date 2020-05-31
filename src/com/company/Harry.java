@@ -55,27 +55,34 @@ public class Harry {
                 harryLines++;
         }
 
-        System.out.println("Lines with word \'Harry\'" + " repeats " + harryLines + " times");
-// create  hash array
+        System.out.println("Lines with word \'Harry\'" + " repeats "
+                + harryLines + " times");
+
+// create the array of distinct
+        String distinctWords = " ";
+        Integer[] hashArray = new Integer[words.length];
         for (int i = 0; i < words.length; i++) {
-          hash[i]=words[i].hashCode();
+            if (!distinctWords.contains(words[i]))
+                distinctWords += words[i] + " ";
+            hashArray[i] = distinctWords.hashCode();
         }
+
 //Count the intersections of hashes.
-        for (int i = 0; i < hash.length; i++) {
+        for ( int i = 0; i < hashArray.length; i++) {
 
             int count = 1;
 
 
-            for (int j = i + 1; j < hash.length; j++) {
-                if (hash[i].equals(hash[j])) {
+            for (int j = i + 1; j < hashArray.length; j++) {
+                if (hashArray[i].equals(hashArray[j])) {
                     count++;
-                    hash[j] = 0;
+                    hashArray[j] = 0;
                 }
             }
 
-            if (count > 1 && hash[i] != 0)
+            if (count > 1 && hashArray[i] != 0)
 
-                 System.out.println("Hashcode: " + hash[i] + " repeats " +
+                 System.out.println("Hashcode: " + hashArray[i] + " repeats " +
                        count + " times ");
         }
     }
